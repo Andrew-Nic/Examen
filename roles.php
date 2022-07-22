@@ -30,7 +30,7 @@ $query = mysqli_query($conex, $sql);
                 <div class="col-md-3">
                     <h1>Registrar Roles</h1>
                     <form action="insertRol.php" method="POST">
-                        <input type="text" class="form-control mb-3" name="id" placeholder="ID rol">
+                        <input type="text" class="form-control mb-3" name="id_rol" placeholder="ID rol">
                         <input type="text" class="form-control mb-3" name="nombreRol" placeholder="Nombre rol">
                         <input type="textarea" class="form-control mb-3" rows="3" name="descripcion" placeholder="Descripcion del rol">
                         
@@ -57,7 +57,7 @@ $query = mysqli_query($conex, $sql);
                                     <th><?php  echo $row['id_rol']?></th>
                                     <th><?php  echo $row['nombreRol']?></th>
                                     <th><?php  echo $row['descripcion']?></th> 
-                                    <th><a href="actualizarRol.php?id=<?php echo $row['id_rol'] ?>" class="btn btn-info">Editar</a></th>
+                                    <th><a href="actualizarRol.php?id=<?php echo $row['id_rol']?>" class="btn btn-info">Editar</a></th>
                                     <th><a href="deleteRol.php?id=<?php echo $row['id_rol'] ?>" class="btn btn-danger">Eliminar</a></th>                                        
                                 </tr>
                             <?php 

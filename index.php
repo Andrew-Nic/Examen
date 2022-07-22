@@ -37,7 +37,7 @@ $query = mysqli_query($conex, $sql);
                         <input type="text" class="form-control mb-3" name="apellido" placeholder="Apellido">
                         <input type="text" class="form-control mb-3" name="usuario" placeholder="Usuario">
 
-                        <select class="form-select" aria-label="Default select example" name="id_rol">
+                        <select class="form-select mb-3" aria-label="Default select example" name="id_rol">
                         <option selected>Seleciona un rol</option>
                         <?php 
                             while ($rw = mysqli_fetch_array($consul)) {
@@ -55,7 +55,6 @@ $query = mysqli_query($conex, $sql);
                             
 
                         </select>
-                        <input type="text" class="form-control mb-3" name="id_rol" placeholder="Rol">
                         
                         <input type="submit" class="btn btn-primary">
                     </form>
@@ -68,7 +67,7 @@ $query = mysqli_query($conex, $sql);
                                 <th>NOMBRE</th>
                                 <th>APELLIDO</th>
                                 <th>USUARIO</th>
-                                <th>ROL</th>
+                                <th>ID DEL ROL</th>
                                 <th></th>
                                 <th></th>
                             </tr>

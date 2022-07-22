@@ -2,11 +2,10 @@
 require("conexion.php");
 $conex = conectarDB();
 
-
 $id=$_GET['id_rol'];
 
 $sql="SELECT * FROM roles WHERE id_rol='$id'";
-$query=mysqli_query($conex,$sql);
+$query=mysqli_query($conex, $sql);
 
 $row = mysqli_fetch_array($query);
 
